@@ -16,8 +16,8 @@ npm run server
 # Move to client folder
 cd client/
 # Install dependencies
-yarn install
+npm install
 # Start  client
-yarn run start
+npm run start
 ```
  
