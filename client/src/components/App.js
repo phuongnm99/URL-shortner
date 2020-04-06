@@ -20,9 +20,9 @@ class App extends Component {
         </BrowserRouter>
         <div className="footer">
           Built by{" "}
-          <a target="_blank" href="http://muhzi.com">
-            Muhsin.K
-          </a>© 2018
+          <a target="_blank" href="http://www.aimesoft.com/">
+            Aimesoft
+          </a>© 2020
         </div>
       </div>
     );
