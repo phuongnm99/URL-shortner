@@ -4,10 +4,10 @@
 # Move to server folder
 cd server/
 # Install dependencies
-yarn install
+npm install
 
 # Start  server
-yarn run server
+npm run server
 ```
 
 #### Run front end
