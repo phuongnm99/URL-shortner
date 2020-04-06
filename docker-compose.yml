@@ -1,0 +1,23 @@
+version: "3"
+services: 
+  mongo:
+    image: mongo:4.2.5
+  redis:
+    image: redis:6.0-rc3-alpine
+  service:
+    build: 
+      context: ./server
+    environment: 
+      PORT: 80
+      MONGO_URI: "mongodb://mongo/url-shortner"
+      REDIS_URI: "redis://redis:6379"
+    depends_on: 
+      - redis
+      - mongo
+  web-app:
+    build: 
+      context: ./client
+    ports: 
+      - 4000:4000
+    depends_on: 
+      - service

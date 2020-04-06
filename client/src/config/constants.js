@@ -1,4 +1,4 @@
 module.exports = {
-  apiUrl: "http://localhost:3000/api/",
-  baseUrl: "http://localhost" 
+  apiUrl: process.env.REACT_APP_API_URL,
+  baseUrl: process.env.REACT_APP_BASE_URL
 };
