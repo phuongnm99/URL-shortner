@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
-RUN echo REACT_APP_API_URL=http://aimeai.demo01.aimesoft.com/api/ >> .env.local
+RUN echo REACT_APP_API_URL=http://u.demo01.aimesoft.com/api/ >> .env.local
 
-RUN echo REACT_APP_BASE_URL=http://aimeai.demo01.aimesoft.com >> .env.local
+RUN echo REACT_APP_BASE_URL=http://u.demo01.aimesoft.com >> .env.local
 
 RUN npm install
 
